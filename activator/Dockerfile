@@ -11,5 +11,4 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
 RUN apt-get install -y oracle-java8-installer
 RUN wget http://downloads.typesafe.com/typesafe-activator/1.2.3/typesafe-activator-1.2.3-minimal.zip -P /opt
 RUN cd /opt && unzip typesafe-activator-1.2.3-minimal.zip
-#RUN /opt/activator-1.2.3-minimal/activator list-templates
-
+RUN echo `/opt/activator-1.2.3-minimal/activator list-templates`
